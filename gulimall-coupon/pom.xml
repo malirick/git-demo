@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.rick</groupId>
-    <artifactId>gulimall-member</artifactId>
+    <groupId>com.rick.gulimall</groupId>
+    <artifactId>gulimall-coupon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gulimall-member</name>
+    <name>gulimall-coupon</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -17,7 +17,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>com.rick.gulimall</groupId>
             <artifactId>gulimall-common</artifactId>
@@ -82,7 +81,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.rick.gulimall.member.GulimallMemberApplication</mainClass>
+                    <mainClass>com.rick.gulimall.GulimallPcouponApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
