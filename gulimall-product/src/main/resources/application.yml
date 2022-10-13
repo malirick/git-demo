@@ -14,14 +14,14 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
 #    alicloud:
-#      access-key: LTAI5t8aYZEmowvUeW7o61jh
+#      access-key: LTAI5t8aY
 #      secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
 #      oss:
 #        endpoint: oss-cn-hangzhou.aliyuncs.com
 #    alicloud:
 #      oss:
 #        sts:
-#          access-key: LTAI5t8aYZEmowvUeW7o61jh
+#          access-key: LTAI5t8aY
 #          secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
 #        endpoint: oss-cn-hangzhou.aliyuncs.com
 
@@ -29,7 +29,7 @@ spring:
 #    alicloud:
 #      oss:
 #        sts:
-#          access-key: LTAI5t8aYZEmowvUeW7o61jh
+#          access-key: LTAI5t8aY
 #          secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
 #      acm:
 #        endpoint: oss-cn-hangzhou.aliyuncs.com

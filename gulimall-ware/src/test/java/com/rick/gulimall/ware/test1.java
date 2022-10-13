@@ -1,67 +1,43 @@
 package com.rick.gulimall.ware;
+import java.util.Comparator;
+import java.util.TreeMap;
 
-import org.junit.jupiter.api.Test;
+/**
+ * @author shuang.kou
+ * @createTime 2020年06月15日 17:02:00
+ */
 
-import java.util.Arrays;
+public class test1{
 
-public class test1 {
+    public static class Person {
+        private Integer age;
 
-
-    public int[] merge(int[] nums1, int m, int[] nums2, int n) {
-       // nums1 = Arrays.copyOf(nums1,m+n);
-        int[] num=new int[m+n];
-        int i=0;
-        int j=0;
-        for(int s=0;s<m+n;s++){
-
-            try {
-                if (nums1[i] >= nums2[j]) {
-                    num[s] = nums2[j];
-                    if (j < n - 1) {
-                        j++;
-                    }
-
-                } else if (nums1[i] < nums2[j]) {
-                    num[s] = nums1[i];
-                    if (i < m - 1) {
-                        i++;
-                    }
-                }
-            }catch (NumberFormatException e){
-                int v=Math.min(m,n);
-                if(v==m){
-                    for(int x=s-m;x<n;x++){
-                        num[s]=nums2[s-m];
-                    }
-
-                }else {
-                    for(int x=s-n;x<m;x++){
-                        num[s]=nums1[s-n];
-                    }
-
-                }
-            }
-
-
-
+        public Person(Integer age) {
+            this.age = age;
         }
 
-        return num;
+        public Integer getAge() {
+            return age;
+        }
 
 
+        public static void main(String[] args) {
+            TreeMap<Person, String> treeMap = new TreeMap<>(new Comparator<Person>() {
+                @Override
+                public int compare(Person person1, Person person2) {
+                    int num = person1.getAge() - person2.getAge();
+                    return Integer.compare(num, 0);
+                }
+            });
+            treeMap.put(new Person(3), "person1");
+            treeMap.put(new Person(18), "person2");
+            treeMap.put(new Person(35), "person3");
+            treeMap.put(new Person(16), "person4");
+            treeMap.entrySet().stream().forEach(personStringEntry -> {
+                System.out.println(personStringEntry.getValue());
+            });
+        }
     }
 
-    @Test
-    public void a(){
-       int [] nums1 = {1,2,3};
-       int  m = 3;
-       int [] nums2 = {2,5,6};
-       int n = 3;
-       int[]  a=merge(nums1,m,nums2,n);
-        System.out.println(Arrays.toString(a));
 
-    }
 }
-
-
-

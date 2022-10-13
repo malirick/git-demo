@@ -32,7 +32,7 @@ public class OssController {
         // Endpoint以杭州为例，其它Region请按实际情况填写。
         String endpoint = "oss-cn-hangzhou.aliyuncs.com";
         // 云账号AccessKey有所有API访问权限，建议遵循阿里云安全最佳实践，创建并使用RAM子账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建。
-        String accessKeyId = "LTAI5t8aYZEmowvUeW7o61jh";
+        String accessKeyId = "LTAI5t8aY";
         String accessKeySecret = "FfbZsNEHzYnozZwJkgiuq50Juagjrw";
 
         String bucket = "gulimall-rick"; // 请填写您的 bucketname 。
