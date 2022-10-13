@@ -1,0 +1,46 @@
+server:
+  port: 11000
+
+spring:
+  application:
+    name: gulimall-product
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://120.26.165.79:3306/gulimall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#    alicloud:
+#      access-key: LTAI5t8aYZEmowvUeW7o61jh
+#      secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
+#      oss:
+#        endpoint: oss-cn-hangzhou.aliyuncs.com
+#    alicloud:
+#      oss:
+#        sts:
+#          access-key: LTAI5t8aYZEmowvUeW7o61jh
+#          secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
+#        endpoint: oss-cn-hangzhou.aliyuncs.com
+
+
+#    alicloud:
+#      oss:
+#        sts:
+#          access-key: LTAI5t8aYZEmowvUeW7o61jh
+#          secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
+#      acm:
+#        endpoint: oss-cn-hangzhou.aliyuncs.com
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+
+
+
+

@@ -1,0 +1,17 @@
+#spring.application.name=gulimall-third-party
+#spring.cloud.nacos.config.server-addr=127.0.0.1:8848
+#spring.cloud.nacos.config.namespace=63e26013-f9ad-45b5-8aba-25707e1e25bf
+
+#spring.cloud.nacos.config.ext-config[0].data-id=oss.yml
+#spring.cloud.nacos.config.ext-config[0].group=DEFAULT_GROUP
+#spring.cloud.nacos.config.ext-config[0].refresh=true
+
+
+spring:
+  cloud:
+    alicloud:
+      access-key: LTAI5t8aYZEmowvUeW7o61jh
+      secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
+      oss:
+        endpoint: oss-cn-hangzhou.aliyuncs.com
+        bucket: gulimall-rick
