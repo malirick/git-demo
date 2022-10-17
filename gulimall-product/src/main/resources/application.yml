@@ -22,7 +22,7 @@ spring:
 #      oss:
 #        sts:
 #          access-key: LTAI5t8aY
-#          secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
+#          secret-key: FfbZsNEHzY
 #        endpoint: oss-cn-hangzhou.aliyuncs.com
 
 
@@ -30,7 +30,7 @@ spring:
 #      oss:
 #        sts:
 #          access-key: LTAI5t8aY
-#          secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
+#          secret-key: FfbZsNEHz
 #      acm:
 #        endpoint: oss-cn-hangzhou.aliyuncs.com
 
