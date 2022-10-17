@@ -10,8 +10,8 @@
 spring:
   cloud:
     alicloud:
-      access-key: LTAI5t8aY
-      secret-key: FfbZsNEHzYnozZwJkgiuq50Juagjrw
+      access-key: LTAI5t
+      secret-key: FfbZsNE
       oss:
         endpoint: oss-cn-hangzhou.aliyuncs.com
         bucket: gulimall-rick
